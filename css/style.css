@@ -1,0 +1,69 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --clr-blue: #387ddd;
+  --clr-grey: #858585;
+
+  --clr-bg: var(--clr-dark);
+  --clr-text: var(--clr-grey);
+}
+
+body {
+    display: grid;
+  align-items: center;
+  justify-content: center;
+  color: var(--clr-text);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  margin: 20px;
+}
+
+h1 {
+  color: var(--clr-blue);
+}
+
+.contacts {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 0.8rem;
+  box-shadow: 0 0 6px 0.3px var(--clr-grey);
+  overflow: hidden;
+}
+
+.contact-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-align: start;
+  line-height: 25px;
+  font-size: 0.9rem;
+  padding: 10px;
+}
+
+img {
+  max-width: 40%;
+}
+
+.name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2em;
+  font-weight: 600;
+  width: 100%;
+  height: 2.2rem;
+  color: white;
+  background-color: var(--clr-blue);
+}
